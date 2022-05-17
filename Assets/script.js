@@ -38,3 +38,10 @@ let question = [
     }
 
 ]
+
+
+//onclick Events
+restartBtn.addEventListener("click" , restart);
+prevBtn.addEventListener("click" , prev);
+nextBtn.addEventListener("click" , next);
+submitBtn.addEventListener("click" , submit);
