@@ -120,3 +120,14 @@ function next(){
     }
     nextBtn.classList.remove("hide");
 }
+
+// submit()
+function submit(){
+    prevBtn.classList.add("hide");
+    nextBtn.classList.add("hide");
+    submitBtn.classList.add("hide");
+    trueBtn.classList.add("hide");
+    falseBtn.classList.add("hide");
+    questionText.innerHTML = "Congratulations on finishing your quiz"
+
+}
