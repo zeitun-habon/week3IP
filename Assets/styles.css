@@ -39,3 +39,10 @@ body{
 #total-score{
     color: #f6490f;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
