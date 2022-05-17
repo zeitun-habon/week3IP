@@ -46,3 +46,17 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.btn{
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 6px 12px -2px rgb(#f27813, .15);
+    background: #ef9614;
+    border-radius: 4px;
+    padding: 10px;
+    color: beige;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    padding: 15px;
+}
