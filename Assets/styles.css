@@ -15,3 +15,16 @@ body{
     align-items: center;
     justify-content: center;
 }
+.container{
+    width: 80vw;
+    max-width: 80%;
+    background-color: beige;
+    height: 70vh;
+    box-shadow: 0 0 5px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+}
