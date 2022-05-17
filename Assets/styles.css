@@ -70,3 +70,7 @@ body{
     padding: 10px;
     order: 4;
 }
+
+.hide{
+    display: none;
+}
