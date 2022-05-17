@@ -45,3 +45,44 @@ restartBtn.addEventListener("click" , restart);
 prevBtn.addEventListener("click" , prev);
 nextBtn.addEventListener("click" , next);
 submitBtn.addEventListener("click" , submit);
+
+//beginQuiz()
+function beginQuiz(){
+    currentQuestion = 0;
+    totalScore.innerHTML = questions.length;
+    questionText.innerHTML = questions[currentQuestion].question;
+    trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
+    trueBtn.onclick = () =>{
+        if (questions[currentQuestion].answers[0].answer){
+            if(score < 3){
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion < 2){
+            next();
+        }
+    }
+
+    prevBtn.classList.add("hide")
+
+}
+
+beginQuiz();
+
+//restart()
+function restart(){
+    currentQuestion = 0;
+    prevBtn.classList.remove("hide")
+    nextBtn.classList.remove("hide")
+    submitBtn.classList.remove("hide")
+    trueBtn.classList.remove("hide")
+    falseBtn.classList.remove("hide")
+    score = 0;
+    userScore.innerHTML = score;
+    beginQuiz();
+
+}
+
+//next()
+
