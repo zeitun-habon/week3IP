@@ -1,18 +1,18 @@
 //const variabls
-const restartBtn = document.getElementById("restart")
-const prevBtn = document.getElementById("prev")
+const restartBtn = document.getElementById("restart");
+const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next")
-const submitBtn = document.getElementById("submit")
-const trueBtn = document.getElementById("True")
-const falseBtn = document.getElementById("False")
-const userScore = document.getElementById("user-score")
-const totalScore = document.getElementById("total-score")
-const questionText = document.getElementById("question-text")
+const submitBtn = document.getElementById("submit");
+const trueBtn = document.getElementById("True");
+const falseBtn = document.getElementById("False");
+const userScore = document.getElementById("user-score");
+const totalScore = document.getElementById("total-score");
+const questionText = document.getElementById("question-text");
 
 //custom variables
 let currentQuestion = 0;
-let score = 0;
-let question = [
+var score = 0;
+let questions = [
     {
         question: "Is moringa the best bootcamp in Africa?",
         answers:[
@@ -41,15 +41,15 @@ let question = [
 
 
 //onclick Events
-restartBtn.addEventListener("click" , restart);
-prevBtn.addEventListener("click" , prev);
+restartBtn.addEventListener('click' , restart);
+prevBtn.addEventListener('click' , prev);
 nextBtn.addEventListener("click" , next);
 submitBtn.addEventListener("click" , submit);
 
 //beginQuiz()
 function beginQuiz(){
     currentQuestion = 0;
-    totalScore.innerHTML = questions.length;
+   
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () =>{
