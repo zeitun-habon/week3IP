@@ -16,7 +16,7 @@ let questions = [
     {
         question: "Is moringa the best bootcamp in Africa?",
         answers:[
-           {option:"Of course!",answer:true},
+           {option:"Of course!", answer:true},
            {option:"No,not at all.", answer:false},
             
         ]
