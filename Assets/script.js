@@ -70,19 +70,6 @@ function beginQuiz(){
 
 beginQuiz();
 
-//restart()
-function restart(){
-    currentQuestion = 0;
-    prevBtn.classList.remove("hide")
-    nextBtn.classList.remove("hide")
-    submitBtn.classList.remove("hide")
-    trueBtn.classList.remove("hide")
-    falseBtn.classList.remove("hide")
-    score = 0;
-    userScore.innerHTML = score;
-    beginQuiz();
-
-}
 
 //next()
 function next(){
@@ -131,3 +118,19 @@ function submit(){
     questionText.innerHTML = "Congratulations on finishing your quiz"
 
 }
+
+//restart()
+function restart(){
+    currentQuestion = 0;
+    prevBtn.classList.remove("hide")
+    nextBtn.classList.remove("hide")
+    submitBtn.classList.remove("hide")
+    trueBtn.classList.remove("hide")
+    falseBtn.classList.remove("hide")
+    score = 0;
+    userScore.innerHTML = score;
+    beginQuiz();
+
+}
+
+
